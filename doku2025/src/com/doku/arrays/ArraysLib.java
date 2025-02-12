@@ -81,7 +81,6 @@ public class ArraysLib {
 		return Arrays.stream(nums).max().getAsInt();
 	}
 	public boolean contain(int[] nums, int val) {
-		boolean ans = false;
 		for(int n: nums) {
 			if(n==val) return true;
 		}

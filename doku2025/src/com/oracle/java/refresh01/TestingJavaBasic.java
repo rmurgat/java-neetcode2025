@@ -3,7 +3,6 @@ package com.oracle.java.refresh01;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -13,7 +12,6 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.Stack;
 import java.util.TreeSet;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 class OuterClass {
@@ -157,7 +155,7 @@ public class TestingJavaBasic {
 		set.forEach(System.out::println);
 		System.out.println("TreeSet:");
 		Set<String> tset = new TreeSet<>(set);
-		set.forEach(System.out::println);
+		tset.forEach(System.out::println);
 	}
 
 	public void warmup_iterator() {
@@ -232,10 +230,11 @@ public class TestingJavaBasic {
 		String reversed3 = strbuilder.reverse().toString();
 		
 		//reversing string 4
-		char[] achar = s.toCharArray();
+/*		char[] achar = s.toCharArray();
 		List<Character> list = s.chars().mapToObj(c->(char)c).collect(Collectors.toList());
 		list = list.reversed();
 		String reversed4 = list.stream().map(String::valueOf).collect(Collectors.joining());
+*/	
 		
 		//reversing string 5
 		Stack<Character> stack = new Stack<>();
@@ -248,7 +247,7 @@ public class TestingJavaBasic {
 		System.out.println("Reversing 1:" + reversed1);
 		System.out.println("Reversing 2: " + reversed2);
 		System.out.println("Reversing 3: " + reversed3);
-		System.out.println("Reversing 4: " + reversed4);
+		//System.out.println("Reversing 4: " + reversed4);
 		System.out.println("Reversing 4: " + reversed5);
 		
 		//smallest element

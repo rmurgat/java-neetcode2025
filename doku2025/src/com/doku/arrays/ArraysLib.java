@@ -1,6 +1,5 @@
 package com.doku.arrays;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -53,13 +52,13 @@ public class ArraysLib {
 		System.out.println("\nInverting...");
 		int[] array3 = Arrays.copyOf(nums, nums.length);
 		List<Integer> list3 = Arrays.stream(array3).boxed().collect(Collectors.toList());
-		List<Integer> list4 = new ArrayList<>();
+		// List<Integer> list4 = new ArrayList<>();
 		Collections.sort(list3,Collections.reverseOrder());
 		System.out.print("list:");
 		list3.forEach(n->System.out.print(n+","));
 		System.out.println("\nfunc: " + Arrays.toString(reverse(sorted2)));
-		list3.reversed().forEach(n->list4.add(n));
-		System.out.println("\nplay: " + list4);
+		// list3.reversed().forEach(n->list4.add(n));
+		// System.out.println("\nplay: " + list4);
 	}
 	
 	public int sum_1(int[] nums) {

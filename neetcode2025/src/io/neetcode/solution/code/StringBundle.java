@@ -52,6 +52,4 @@ public class StringBundle {
     	return numDecoding(s, 0, map);
     }
     
-    
-
 }

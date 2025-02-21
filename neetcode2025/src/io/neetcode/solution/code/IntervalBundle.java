@@ -31,7 +31,6 @@ public class IntervalBundle {
     
     public int[][] merge(int[][] intervals) {
     	Arrays.sort(intervals, (a,b)->Integer.compare(a[0], b[0]));
-    	int L = intervals.length, i=0;
     	List<int[]> ans = new ArrayList<>();
     	ans.add(intervals[0]);
     	for( int[] interval: intervals) {

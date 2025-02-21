@@ -1,6 +1,5 @@
 package io.neetcode.solution;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 import io.neetcode.solution.code.ArrayBundle;
@@ -104,8 +103,7 @@ public class Menu {
 			default: 
 				    System.out.println("*** option not allowed ***");
 		}
-		
-
+		scan.close();
 	}
 
 }
